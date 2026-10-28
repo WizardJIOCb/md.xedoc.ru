@@ -1,0 +1,30 @@
+{
+  "name": "md.xedoc.ru",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/src/server.js",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "upload": "tsx scripts/upload.ts",
+    "import-local": "tsx scripts/import-local.ts"
+  },
+  "dependencies": {
+    "@fastify/multipart": "^9.0.3",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.3.3",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.17.4",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.15.32",
+    "@types/sanitize-html": "^2.16.1",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

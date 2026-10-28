@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Runtime storage. Keep only the folder shape in git.
+data/*
+!data/documents/
+!data/metadata/
+!data/tmp/
+data/documents/*
+data/metadata/*
+data/tmp/*
+!data/documents/.gitkeep
+!data/metadata/.gitkeep
+!data/tmp/.gitkeep
+
+# Local Codex exports can be very large.
+*-tasks-*.md
